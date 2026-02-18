@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Datalyzer
 
-## Getting Started
+**Instant, Intelligent Data Analysis.**  
+Upload any dataset (CSV, Excel, JSON) and get a beautiful, interactive dashboard in seconds. No configuration required.
 
-First, run the development server:
+![Datalyzer Dashboard](https://via.placeholder.com/1200x600?text=Datalyzer+Dashboard+Preview)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🚀 Auto Dashboard (Instant)
+- **Pattern Matching Engine**: Automatically detects time series, categorical distributions, and correlations.
+- **Smart Visualizations**: Generates KPIs, Trend Lines, Bar Charts, Pie Charts, and Histograms based on data types.
+- **Zero Config**: Just drop your file and analyze.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🧠 AI Dashboard (Coming Soon)
+- **Deep Semantic Understanding**: Powered by LLMs to understand the *meaning* of your data, not just the shape.
+- **Goal-Oriented Analysis**: "Show me sales performance" -> Generates specific sales breakdown charts.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎨 Stunning Visuals
+- **Premium UI**: Glassmorphism, smooth framer-motion animations, and dynamic transitions.
+- **5 Color Themes**: Midnight, Light, Ocean, Forest, Sunset.
+- **Interactive**: 
+  - **Drag-and-Drop** reordering of all sections.
+  - **Dismiss** irrelevant charts (with Undo).
+  - **Drill-down** tooltips.
 
-## Learn More
+### 🛠 Powerful Tools
+- **Chart Builder**: Create custom charts and KPIs on the fly.
+- **Data Table**: Search, sort, and filter your raw data.
+- **Statistics**: Automatic column profiling (min, max, mean, nulls).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Directory)
+- **Language**: TypeScript
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Utils**: `clsx`, `tailwind-merge`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/datalyzer.git
+   cd datalyzer
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📖 How It Works
+
+1. **Upload Data**: Drag & drop your CSV, Excel, or JSON file.
+2. **Select Mode**: 
+   - **Auto**: Uses heuristic algorithms to build a dashboard instantly.
+   - **AI (Beta)**: Uses LLM for deep analysis.
+3. **Analyze**: Interact with your dashboard. Reorder charts, hide sections, and export insights.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

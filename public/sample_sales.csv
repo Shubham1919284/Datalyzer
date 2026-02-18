@@ -1,0 +1,21 @@
+Date,Product,Category,Revenue,Quantity,Customer_Name,Region
+2024-01-01,Laptop Pro,Electronics,1299.99,2,John Smith,North
+2024-01-02,Wireless Mouse,Electronics,29.99,15,Jane Doe,East
+2024-01-03,Office Chair,Furniture,449.99,3,Bob Wilson,West
+2024-01-04,USB Cable,Electronics,12.99,50,Alice Brown,South
+2024-01-05,Standing Desk,Furniture,699.99,1,Charlie Davis,North
+2024-01-06,Monitor 27",Electronics,399.99,4,Diana Evans,East
+2024-01-07,Keyboard,Electronics,79.99,10,Eve Fisher,West
+2024-01-08,Bookshelf,Furniture,199.99,2,Frank Green,South
+2024-01-09,Webcam HD,Electronics,89.99,8,Grace Hill,North
+2024-01-10,Desk Lamp,Furniture,34.99,20,Henry Irving,East
+2024-01-11,Laptop Pro,Electronics,1299.99,3,Ivy James,West
+2024-01-12,Wireless Mouse,Electronics,29.99,25,Jack King,South
+2024-01-13,Office Chair,Furniture,449.99,2,Kate Lee,North
+2024-01-14,Headphones,Electronics,199.99,6,Leo Martin,East
+2024-01-15,Standing Desk,Furniture,699.99,2,Mia Nelson,West
+2024-01-16,Monitor 27",Electronics,399.99,3,Nick Owen,South
+2024-01-17,Keyboard,Electronics,79.99,12,Olivia Park,North
+2024-01-18,Webcam HD,Electronics,89.99,5,Paul Quinn,East
+2024-01-19,USB Cable,Electronics,12.99,100,Rose Smith,West
+2024-01-20,Desk Lamp,Furniture,34.99,15,Sam Turner,South
