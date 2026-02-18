@@ -1,99 +1,129 @@
-# 📊 Datalyzer
-
-**Instant, Intelligent Data Analysis.**  
-Upload any dataset (CSV, Excel, JSON) and get a beautiful, interactive dashboard in seconds. No configuration required.
-
-![Datalyzer Dashboard](https://via.placeholder.com/1200x600?text=Datalyzer+Dashboard+Preview)
-
-## ✨ Features
-
-### 🚀 Auto Dashboard (Instant)
-- **Pattern Matching Engine**: Automatically detects time series, categorical distributions, and correlations.
-- **Smart Visualizations**: Generates KPIs, Trend Lines, Bar Charts, Pie Charts, and Histograms based on data types.
-- **Zero Config**: Just drop your file and analyze.
-
-### 🧠 AI Dashboard (Coming Soon)
-- **Deep Semantic Understanding**: Powered by LLMs to understand the *meaning* of your data, not just the shape.
-- **Goal-Oriented Analysis**: "Show me sales performance" -> Generates specific sales breakdown charts.
-
-### 🎨 Stunning Visuals
-- **Premium UI**: Glassmorphism, smooth framer-motion animations, and dynamic transitions.
-- **5 Color Themes**: Midnight, Light, Ocean, Forest, Sunset.
-- **Interactive**: 
-  - **Drag-and-Drop** reordering of all sections.
-  - **Dismiss** irrelevant charts (with Undo).
-  - **Drill-down** tooltips.
-
-### 🛠 Powerful Tools
-- **Chart Builder**: Create custom charts and KPIs on the fly.
-- **Data Table**: Search, sort, and filter your raw data.
-- **Statistics**: Automatic column profiling (min, max, mean, nulls).
+<div align="center">
+  <br />
+  <!-- <img src="public/logo.png" alt="Datalyzer Logo" width="100" /> -->
+  <h1>Datalyzer</h1>
+  <h3>Instant Data Insights. Zero Config Required.</h3>
+  <p>
+    Turn raw CSV, Excel, and JSON files into stunning, interactive dashboards in seconds.
+    <br />
+    <br />
+    <a href="https://shubham1919284.github.io/Datalyzer/">View Demo</a>
+    ·
+    <a href="https://github.com/Shubham1919284/Datalyzer/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Shubham1919284/Datalyzer/pulls">Request Feature</a>
+  </p>
+</div>
 
 ---
 
-## 🛠 Tech Stack
+<div align="center">
+
+![Landing Page](docs/landing-page.png)
+_Upload any dataset and get instant insights - no login required._
+
+</div>
+
+## 🚀 Overview
+
+**Datalyzer** is a powerful client-side data analysis engine built with Next.js 15. It eliminates the friction of traditional BI tools by processing data locally in your browser. Whether you have messy CSVs or complex JSON exports, Datalyzer automatically detects patterns, generates KPIs, and builds a comprehensive dashboard tailored to your data.
+
+### Why Datalyzer?
+- **🔒 Privacy First**: Your data never leaves your device. All processing happens client-side.
+- **⚡ Instant**: No sign-ups, no database connections. Just drag and drop.
+- **🎨 Beautiful**: Professional-grade visualizations animations and a responsive design.
+
+## ✨ Key Features
+
+### 📊 Smart Dashboard Generation
+- **Auto-KPIs**: Automatically identifies key metrics (Sum, Average, Count) based on column data types.
+- **Interactive Charts**:
+  - Time Series (Area & Line) for temporal data.
+  - Categorical Analysis (Bar & Column charts).
+  - Distribution insights (Pie & Donut charts).
+  - Correlation Heatmaps to find relationships.
+- **Drill Down**: Click any chart segment to filter the entire dashboard instantly.
+
+### 🛠️ Advanced Tools
+- **Data Cleaner**: Handles missing values, date parsing, and type inference automatically.
+- **Format Support**: Seamlessly parses `.csv`, `.xlsx`, and `.json`.
+- **Export**: Download your cleaned data or save charts as images.
+
+### 🤖 AI Analysis (Coming Soon)
+- Leveraging LLMs to provide semantic understanding of your data (e.g., "Show me sales trends for Q3").
+
+## 🛠️ Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) (App Directory)
-- **Language**: TypeScript
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Charts**: [Recharts](https://recharts.org/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Utils**: `clsx`, `tailwind-merge`
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **State Management**: React Context + Hooks
+- **Data Processing**: PapaParse, XLSX, Lodash
 
----
+## 📸 Screenshots
+
+| Dashboard View | Interactive Filtering |
+|:---:|:---:|
+| ![Dashboard](docs/dashboard.png) | ![Filtering](docs/filtering.png) |
+| _Auto-generated charts based on your data_ | _Click-to-filter capabilities_ |
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
+- Node.js 18+ 
 - npm or yarn
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/datalyzer.git
-   cd datalyzer
+1. **Clone the repo**
+   ```sh
+   git clone https://github.com/Shubham1919284/Datalyzer.git
    ```
-
 2. **Install dependencies**
-   ```bash
+   ```sh
    npm install
    ```
-
 3. **Run the development server**
-   ```bash
+   ```sh
    npm run dev
    ```
 
-4. **Open in browser**
-   Visit [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+## 📂 Project Structure
 
-## 📖 How It Works
-
-1. **Upload Data**: Drag & drop your CSV, Excel, or JSON file.
-2. **Select Mode**: 
-   - **Auto**: Uses heuristic algorithms to build a dashboard instantly.
-   - **AI (Beta)**: Uses LLM for deep analysis.
-3. **Analyze**: Interact with your dashboard. Reorder charts, hide sections, and export insights.
-
----
+```
+datalyzer/
+├── src/
+│   ├── app/              # Next.js App Router pages
+│   ├── components/       # React components
+│   │   ├── charts/       # Recharts wrappers
+│   │   └── ui/           # Shared UI elements
+│   ├── lib/              # Utilities & classifiers
+│   │   ├── classifier.ts # Heuristic engine
+│   │   └── parser.ts     # File parsing logic
+│   └── styles/           # Global styles
+├── public/               # Static assets
+└── [Configuration Files]
+```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
----
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+  Made with ❤️ by Shubham
+</div>
